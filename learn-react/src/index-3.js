@@ -3,14 +3,17 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Buttonify from "./App";
-import HelloWorld from "./hello";
 import * as serviceWorker from "./serviceWorker";
 
-var destination = document.querySelector("root");
+//ReactDOM.render(<App />, document.getElementById("root"));
+
+var destination = document.querySelector("#root");
 
 ReactDOM.render(
   //pass the property value to the component
-  <Buttonify behavior="button">Go!</Buttonify>,
+  <div>
+    <Buttonify behavior="submit">SEND DATA</Buttonify>
+  </div>,
   destination
 );
 

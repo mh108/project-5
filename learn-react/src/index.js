@@ -2,23 +2,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Buttonify from "./App";
-import HelloWorld from "./helloWorld";
+import HelloWorld1 from "./HelloWorld1";
 import * as serviceWorker from "./serviceWorker";
 
-var destinationA = document.querySelector(".a");
-var destinationB = document.querySelector(".b");
-var destinationC = document.querySelector(".c");
+var destination = document.querySelector("#root");
 
-ReactDOM.render(<HelloWorld greetTarget="Component World" />, destinationA);
-
-ReactDOM.render(<HelloWorld greetTarget="Hello" />, destinationB);
-
+//create an instance of a component, and add to DOM
 ReactDOM.render(
-  //pass the property value to the component
-  <Buttonify behavior="button">Go!</Buttonify>,
-  //destinationC
-  document.querySelector(".c").appendChild(document.createElement("div"))
+  // call the component
+  <HelloWorld1 />,
+  destination
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -1,16 +1,14 @@
 // jshint esversion: 6
 
 import React from "react";
-//import logo from "./logo.svg";
+import logo from "./logo.svg";
 import "./App.css";
 
 class Buttonify extends React.Component {
   render() {
     return (
       <div>
-        <button className="clickable" type={this.props.behavior}>
-          {this.props.children}
-        </button>
+        <button type={this.props.behavior}>{this.props.children}</button>
       </div>
     );
   }
