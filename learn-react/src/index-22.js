@@ -1,19 +1,20 @@
 // jshint esversion: 6
-
-//see comp-demo-4.html
-
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import HelloWorld2 from "./HelloWorld2";
+import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+
+//ReactDOM.render(<App />, document.getElementById("root"));
 
 var destination = document.querySelector("#root");
 
-//create an instance of a component, and add to DOM
 ReactDOM.render(
-  // call the component
-  <HelloWorld2 greetTarget="Black Widow" />,
+  //pass the property value to the component
+  <div>
+    <App greetTarget="Iron Man" />
+    <App greetTarget="Black Widow" />
+  </div>,
   destination
 );
 

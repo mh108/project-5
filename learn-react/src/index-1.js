@@ -1,18 +1,18 @@
 // jshint esversion: 6
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import HelloWorld from "./App";
+import HelloWorld1 from "./HelloWorld1";
 import * as serviceWorker from "./serviceWorker";
 
-//ReactDOM.render(<App />, document.getElementById("root"));
+//optional: add style rules to index.css, and uncomment the following line
+import "./index.css";
 
 var destination = document.querySelector("#root");
 
 //create an instance of a component, and add to DOM
 ReactDOM.render(
   // call the component
-  <HelloWorld />,
+  <HelloWorld1 />,
   destination
 );
 
